@@ -10,3 +10,6 @@ Skills : C, Java, Javascript , sql , Testing
 
 Team Member 2: Meghana Thimmapuram
 Skills :C, C++, Java, SQL, Python
+
+Team Member 3: Preethi Mudireddy
+Skills :C, C++, Java, SQL, Python
