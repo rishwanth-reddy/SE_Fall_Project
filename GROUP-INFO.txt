@@ -1,8 +1,7 @@
 Group name: Soul-Cynics
+Group size: 8
+
 File creator: Roja Kamble
 Skills: C, C++, Testing
-
-
-
 
 Team member:
