@@ -9,4 +9,4 @@ Team member 1: Divya Kumbham
 Skills : C, Java, Javascript , sql , Testing
 
 Team Member 2: Meghana Thimmapuram
-Skills :C, C++, Java, SQL
+Skills :C, C++, Java, SQL, Python
