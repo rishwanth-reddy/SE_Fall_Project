@@ -4,4 +4,5 @@ Group size: 8
 File creator: Roja Kamble
 Skills: C, C++, Core Java, Testing
 
-Team member1:
+Team member 1: Divya Kumbham
+Skills : C, Java, Javascript , dbms , Testing
