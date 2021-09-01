@@ -6,7 +6,7 @@ File creator: Roja Kamble
 Skills: C, C++, Core Java, Testing
 
 Team member 1: Divya Kumbham
-Skills : C, Java, Javascript , dbms , Testing
+Skills : C, Java, Javascript , sql , Testing
 
 Team Member 2: Meghana Thimmapuram
 Skills :C, C++, Java, SQL
