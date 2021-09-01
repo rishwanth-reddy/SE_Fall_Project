@@ -6,3 +6,6 @@ Skills: C, C++, Core Java, Testing
 
 Team member 1: Divya Kumbham
 Skills : C, Java, Javascript , dbms , Testing
+
+Team Member 2: Meghana Thimmapuram
+Skills :C, C++, Java, SQL
