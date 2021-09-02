@@ -16,3 +16,6 @@ Skills :C, C++, Java, SQL, Python
 
 Team member 4: Rishwanth Reddy Baddipadaga
 Skills : C, Java, Javascript, SQL, Python, Angular.
+
+Team member 5: Sai Nikhil Chitturi
+Skills : C, Java Script , Python, SQL
