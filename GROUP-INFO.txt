@@ -19,3 +19,6 @@ Skills : C, Java, Javascript, SQL, Python, Angular.
 
 Team member 5: Sai Nikhil Chitturi
 Skills : C, Java Script , Python, SQL
+
+Team Member 6: Neha Geereddy
+Skills : C, Java, Python, DB2, SQL, Cobol
