@@ -22,3 +22,6 @@ Skills : C, Java Script , Python, SQL
 
 Team Member 6: Neha Geereddy
 Skills : C, Java, Python, DB2, SQL, Cobol
+
+Team Member 7: Sri Harsha Swaraj Nadendla
+Skills : C, C++, Python, Javascript
