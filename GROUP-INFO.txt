@@ -1,6 +1,6 @@
 Group name: Soul-Cynics
 Group size: 8
-Group leader: Divya Kumbham
+Group leader: 
 
 File creator: Roja Kamble
 Skills: C, C++, Core Java, Testing
