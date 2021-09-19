@@ -7,7 +7,9 @@ Description: This is a web application that defines & predicts the success of bu
 Directory Structure:
 
 Project Source -> Project Reports -> deliverable1.docx
+
 Project Source -> Planning Documents -> GANTT CHART.xlsx
+
 Project Source -> Meeting Minutes -> meeting minutes1.docx
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
