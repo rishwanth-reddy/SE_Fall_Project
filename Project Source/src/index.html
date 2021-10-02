@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+        {% block contents %}
+        <div>
+          <h3><b>   Abstract</b></h3>
+         <p>The objectives of this project are two-fold: 1)
+to use statistical modeling techniques to help a Fortune
+500 paper and packaging company codify what drives
+sales success and 2) to develop a model that can predict
+sales success with a reasonable degree of accuracy. The
+desired long-run result is to enable the company to
+improve both top-line revenue and bottom-line profits by
+increasing sales close rates, shortening sales cycles, and
+decreasing the cost of sales. The research team generated
+several models to predict win propensities for individual
+sales opportunities, choosing the model with the greatest
+predictive power and ability to generate insights to use as
+the backbone for a client tool. To accomplish this, the
+team leveraged structured and unstructured data from
+the company's Salesforce.com customer relationship
+management system. The team experimented with
+several techniques including binomial logit and various
+decision tree methods, including boosting with gradient
+boost and random forest. Individual attributes of
+customers, opportunities, and internal documentation
+methods that have the greatest influence on sales success
+were identified. The best model predicted win propensity
+with an accuracy of 80%, with precision and recall of
+86% and 77%, respectively, which proved to be an
+improvement over current sales forecast accuracy.</p>
+
+
+        {% endblock %}
+
+
+    <div id="footer">
+      Copyright &copy; textured_stars | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Simple web templates by HTML5</a>
+    </div>
+  </div>
+</body>
+</html>
