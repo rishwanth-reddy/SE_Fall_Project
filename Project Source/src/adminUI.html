@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="index.html">Predicting and Defining B2B Sales Success With<span class="logo_colour">Machine Learning</span></a></h1>
+
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+
+          <li><a href="{% url 'viewadminuserpage' %}">Userdetails</a></li>
+          <li><a href="{% url 'viewadminsellerpage' %}">SellerDetails</a></li>
+          <li><a href ="{% url 'vieworderedproducts' %}">Ordered Products</a></li>
+          <li><a href="{%  url 'search' %}">Search</a> </li>
+          <li><a href="{%  url 'accuracy' %}">accuracy</a> </li>
+          <li><a href="{% url 'logout' %}">Logout</a></li>
+
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="site_content">
+        {% block contents %}
+
+        {% endblock %}
+
+
+   <!-- <div id="footer">
+      Copyright &copy; textured_stars | <a href="http://validator.w3.org/check?uri=referer"></a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.html5webtemplates.co.uk">Simple web templates by HTML5</a>
+    </div>-->
+  </div>
+</body>
+</html>
