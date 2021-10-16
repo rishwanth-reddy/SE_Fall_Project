@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+</head>
+<body>
+{% block contents %}
+<center><h2 style="color:#861983">Welcome to  {{request.session.ownid}}</h2></center>
+ <div>
+     <center><h2><b>Seller Registration Here</b></h2></center>
+     <p><form method="POST" action="{% url 'sellerregistration' %}">
+        {% csrf_token %}
+         <center>
+             <table>
+                 <tr><td>Seller Name</td><td>{{form.name}}</td></tr>
+                 <tr><td>Login ID</td><td>{{form.loginid}}</td></tr>
+                 <tr><td>Password</td><td>{{form.password}}</td></tr>
+                 <tr><td>Email</td><td>{{form.email}}</td></tr>
+                 <tr><td>Contact</td><td>{{form.contact}}</td></tr>
+                 <tr><td></td><td>{{form.authkey}}</td></tr>
+                 <tr><td></td><td>{{form.status}}</td></tr>
+
+                 <tr><td><button type="submit">Register</button></td></tr>
+                 <center>
+                     {% if messages %}
+                            {% for message in messages %}
+                                <font color='RED'>{{message}}</font>
+                            {% endfor %}
+                     {% endif %}
+
+
+
+                 </center>
+
+             </table>
+
+         </center>
+
+
+     </form>
+     {% endblock %}
+
+
+
+ </div>
+
+
+
+</body>
+</html>
