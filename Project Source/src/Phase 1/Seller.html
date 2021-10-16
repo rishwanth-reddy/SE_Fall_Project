@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>b2b</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+{% block contents %}
+<center>
+    <h2><b>Seller Login<b></b></h2>
+    <p>
+        <form action="{% url 'sellerlogincheck' %}" method="POST">
+    {% csrf_token %}
+    SellerId <input type="text" name="loginid" placeholder="Seller Login Id"><br/><br/>
+    Password   <input type="password" name="password" placeholder="Password"><br/><br/>
+    <button type="submit">Login</button><br><br>
+    <a href="{% url 'sellerregistration' %} " >Click here to Register</a>
+    {% if messages %}
+       {% for message in messages %}
+            <font color='RED'>{{message}}</font>
+        {% endfor %}
+    {% endif %}
+    <p><a href="{% url 'index' %}">Need help?</a></p>
+
+</form>
+    </p>
+
+</center>
+{% endblock %}
+
+
+</body>
+</html>
