@@ -10,7 +10,10 @@ Project Source -> Project Reports -> deliverable1.docx
 
 Project Source -> Planning Documents -> GANTT CHART.xlsx
 
-Project Source -> Meeting Minutes -> meeting minutes1.docx
+Project Source -> Meeting Minutes -> meeting minutes1.docx 
+
+Project Source -> src -> Phase 1
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Getting Started:
