@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+{% block contents %}
+<center><h2 style="color:#861983">Welcome to {{request.session.ownid}}</h2></center>
+<form method="Post" enctype="multipart/form-data"  >
+    {% csrf_token %}
+        <center><h2><b>Upload Products</b></h2></center>
+        <center><br><br>
+            <table>
+                 <tr><td>Owner Name </td> <td>{{form.ownername}}</td></tr>
+                <tr><td>Product Name </td> <td>{{form.productname}}</td></tr>
+                <tr><td>Product Vendor Name</td><td>{{form.vendorname}}</td></tr>
+                <tr><td>Product Version</td><td>{{form.productversion}}</td></tr>
+                <tr><td>Product Color</td><td>{{form.color}}</td></tr>
+                <tr><td>ActionPrice</td><td>{{form.actionprice}}</td></tr>
+                <tr><td>Product Price</td><td>{{form.price}}</td></tr>
+                <tr><td>Product Features</td><td>{{form.features}}</td></tr>
+                <tr><td>Date</td> <td>{{form.date}}</td></tr>
+                <tr><td>Time</td><td>{{form.time}}</td></tr>
+                <tr><td>{{form.images}}</td></tr>
+                <tr><td  align="center"><input style="color:green" type="submit" name="submit" value="Upload" ></td></tr>
+                <center>
+                     {% if messages %}
+                            {% for message in messages %}
+                                <font color='RED'>{{message}}</font>
+                            {% endfor %}
+                     {% endif %}
+                 </center>
+</table>
+
+</div>
+
+
+        </center>
+</form>
+{% endblock %}
+
+</body>
+</html>
