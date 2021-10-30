@@ -1,0 +1,40 @@
+{% extends 'sellerbase.html' %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+        {% block contents %}
+        <!-- Developed by Sai Nikhil -->
+        <!-- Form to collect the input to search the products -->
+        <form method="GET" action="{% url 'status' %}">
+            {% csrf_token %}
+            <table style="width:30%">
+         <tr>
+            <td><input type="date"  class="datepicker" name="fromdate"> </td>
+             <td style="width:5%"> to </td>
+              <td><input type="date"  class="datepicker" name="todate"></td>
+            <br>
+            <td><input type="submit" value="Search"></td>
+            </tr>
+
+
+         </table>
+
+
+        </form>
+
+
+        {% endblock %}
+
+</body>
+</html>
