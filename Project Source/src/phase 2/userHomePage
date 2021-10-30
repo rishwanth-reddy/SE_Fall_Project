@@ -35,3 +35,54 @@
                 <td style="color:black">:</td>
                 <td height="30px" style="color:black">{{pro.productname}}</td>
             </tr>
+            <tr>
+                <td style="color:black">Vendor Name</td>
+                <td style="color:black">:</td>
+                <td height="30px" style="color:black">{{pro.vendorname}}</td>
+            </tr>
+             <tr>
+                <td style="color:black">Productversion</td>
+                <td style="color:black">:</td>
+                <td height="30px" style="color:black">{{pro.productversion}}</td>
+            </tr>
+            <tr>
+                <td style="color:black">Color</td>
+                <td style="color:black">:</td>
+                <td height="30px" style="color:black">{{pro.color}}</td>
+            </tr>
+            <tr>
+                <td style="color:black">Price</td>
+                <td style="color:black">:</td>
+                <td height="30px" style="color:black">{{pro.price}}</td>
+            </tr>
+            <tr>
+                <td style="color:black">Features</td>
+                <td style="color:black">:</td>
+                <td height="30px" width="220" style="color:black">{{pro.features}}</td>
+            </tr>
+            <tr>
+                <td style="color:black">Date</td>
+                <td style="color:black">:</td>
+                <td height="30px" width="220" style="color:black">{{pro.date}}</td>
+            </tr>
+            <tr>
+                <td style="color:black">Time</td>
+                <td style="color:black">:</td>
+                <td height="30px" width="220" style="color:black">{{pro.time}}</td>
+            </tr>
+            <tr>
+                <td><a href="/viewproducts?id={{pro.id}} ">View</a> </td>
+            </tr>
+
+
+        </table>
+    </div>
+
+     {% endfor %}
+  </div>
+    </div>
+
+{% endblock %}
+</body>
+</html>
+
