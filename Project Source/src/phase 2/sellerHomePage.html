@@ -1,0 +1,28 @@
+{% extends 'sellerbase.html' %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+<!-- Seller welcome page -->
+<!-- Developed by Meghana-->
+        {% block contents %}
+        <center><h2 style="color:#861983">Welcome to  {{request.session.ownid}}</h2></center>
+        <div>
+
+         <p>Welcome to the seller interface. You can upload products by providing the required details. You can also search for the products that you uploaded previously. You can come back to this page by clicking on the home button and you can logout of the application at any given time!</p>
+
+
+        {% endblock %}
+    </div>
+  </div>
+</body>
+</html>
