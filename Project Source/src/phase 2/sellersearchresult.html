@@ -1,0 +1,54 @@
+{% extends 'sellerbase.html' %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+<!-- Developed by Sai Nikhil -->
+<!-- The following code displays the product details -->
+        {% block contents %}
+        <center><h2 style="color:#861983"> {{request.session.ownid}} view upload product details</h2></center>
+    <table border="2px">
+            <tr>
+                <th>S.No</th>
+                <th>Ownername</th>
+                <th >ProductName</th>
+                <th>Amount</th>
+
+
+
+            </tr>
+           {% for i in object %}
+            <tr>
+                <td style="color:brown">{{i.id}}</td>
+                <td style="color:brown">{{i.ownername}}</td>
+
+            <td style="color:brown">{{i.productname}}</td>
+            <td style="color:brown">{{i.price}}</td>
+
+            </tr>
+        {% endfor %}
+
+
+        <br/>
+        <br/>
+        <!--<tr>
+            <center><td>Totalamount</td><td>{{totalprice}}</td></center>
+        </tr>-->
+
+        </table>
+
+         {% endblock %}
+
+
+</body>
+</html>
