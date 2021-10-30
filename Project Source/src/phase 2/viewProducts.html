@@ -43,3 +43,37 @@
         <td style="color:black">{{dict.vendorname}}</td>
     </tr>
     <tr>
+<td style="color:black">Product Version Name</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.productversion}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Color</td>
+        <td style="color:black"> :</td>
+        <td style="color:black">{{dict.color}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Price</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.price}}</td>
+    </tr>
+    <tr>
+        <td style="color:black">Product Featuers</td>
+        <td style="color:black">:</td>
+        <td style="color:black">{{dict.features}}</td>
+    </tr>
+
+    <tr>
+        <td align="center" colspan="3"><a href="/orderproduct?id={{dict.id}}&price={{dict.price}}&productname={{dict.productname}} ">Buy</a> </td>
+    </tr>
+
+
+    </table>
+
+    </form>
+    </div>
+
+        {% endblock %}
+
+</body>
+</html>
