@@ -1,0 +1,32 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+<!-- Developed by Roja Kamble -->
+        {% block contents %}
+        <center><h1 style="color:#861983">Search Products</h1>
+        <form method="GET" action="{% url 'usersearchresult' %}">
+            {% csrf_token %}
+            <table style="width:30%">
+                 <tr>
+                    <!-- input type to take product name as input and retrieve search results -->
+                    <td><input type="text" class="datepicker" name="productname"> </td>
+                    <td><input type="submit" value="Search"></td>
+                 </tr>
+            </table>
+        </form></center>
+        {% endblock %}
+</body>
+</html>
