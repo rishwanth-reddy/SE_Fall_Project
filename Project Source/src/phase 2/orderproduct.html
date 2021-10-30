@@ -13,6 +13,9 @@
 {% block contents %}
 <center><h2 style="color:#861983">Welcome to  {{request.session.userid}}</h2></center>
 
+<!-- Developed by Meghana Thimmapuram -->
+<!-- The below form displays a form on the web page to collect details to place the order -->
+
 <form action="{% url 'orderproduct'%}" method="POST" enctype="multipart/form-data"  >
     {% csrf_token %}
     <center><h2><b>Order Product</b></h2></center>
@@ -23,9 +26,6 @@
     </tr>
     <tr>
         <td>Productname</td><td>{{form.productname}}</td>
-    </tr>
-    <tr>
-        <td>AadharNumber</td><td>{{form.aadharnumber}}</td>
     </tr>
     <tr>
         <td>Address</td><td>{{form.address}}</td>
@@ -39,9 +39,6 @@
 
     <tr>
        <td>AccountNumber</td> <td>{{form.accountnumber}}</td>
-    </tr>
-    <tr>
-        <td>IFSC Code</td><td>{{form.ifsccode}}</td>
     </tr>
     <tr>
         <td>Amount</td><td>{{form.amount}}</td>
@@ -62,14 +59,22 @@
                             {% endfor %}
                      {% endif %}
 
+
+
                  </center>
 </table>
 
 </div>
 
+
         </center>
 </form>
 
+
+
+
 {% endblock %}
+
+
 </body>
 </html>
