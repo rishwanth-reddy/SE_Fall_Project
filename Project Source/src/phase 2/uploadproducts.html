@@ -12,6 +12,8 @@
 <body>
 {% block contents %}
 <center><h2 style="color:#861983">Welcome to {{request.session.ownid}}</h2></center>
+  <!-- Developed by Preethi -->
+<!-- The following form collects the data to upload a product -->
 <form method="Post" enctype="multipart/form-data"  >
     {% csrf_token %}
         <center><h2><b>Upload Products</b></h2></center>
