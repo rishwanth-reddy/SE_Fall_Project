@@ -1,0 +1,75 @@
+{% extends 'userbase.html' %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>b2b</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+<body>
+{% block contents %}
+<center><h2 style="color:#861983">Welcome to  {{request.session.userid}}</h2></center>
+
+<form action="{% url 'orderproduct'%}" method="POST" enctype="multipart/form-data"  >
+    {% csrf_token %}
+    <center><h2><b>Order Product</b></h2></center>
+    <center><br><br>
+            <table>
+    <tr>
+      <td> UserName </td> <td>{{form.name}}</td>
+    </tr>
+    <tr>
+        <td>Productname</td><td>{{form.productname}}</td>
+    </tr>
+    <tr>
+        <td>AadharNumber</td><td>{{form.aadharnumber}}</td>
+    </tr>
+    <tr>
+        <td>Address</td><td>{{form.address}}</td>
+    </tr>
+    <tr>
+        <td>MobileNumber</td><td>{{form.mobilenumber}}</td>
+    </tr>
+    <tr>
+        <td>BankName</td><td>{{form.bankname}}</td>
+    </tr>
+
+    <tr>
+       <td>AccountNumber</td> <td>{{form.accountnumber}}</td>
+    </tr>
+    <tr>
+        <td>IFSC Code</td><td>{{form.ifsccode}}</td>
+    </tr>
+    <tr>
+        <td>Amount</td><td>{{form.amount}}</td>
+    </tr>
+     <tr>
+         <td>Date</td><td>{{form.date}}</td>
+     </tr>
+     <tr>
+         <td>Time</td><td>{{form.time}}</td>
+     </tr>
+    <tr>
+        <td  align="center"><input style="color:green" type="submit" name="submit" value="Order" ></td>
+    </tr>
+                <center>
+                     {% if messages %}
+                            {% for message in messages %}
+                                <font color='RED'>{{message}}</font>
+                            {% endfor %}
+                     {% endif %}
+
+                 </center>
+</table>
+
+</div>
+
+        </center>
+</form>
+
+{% endblock %}
+</body>
+</html>
