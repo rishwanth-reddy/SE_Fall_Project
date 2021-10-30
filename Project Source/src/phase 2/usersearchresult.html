@@ -1,0 +1,35 @@
+{% extends 'userbase.html' %}
+{% load static %}
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>b2b</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+</head>
+
+<body>
+
+    <!-- Developed by Neha Geereddy -->
+
+        {% block contents %}
+        <center>
+        <h2 style="color:#861983">View User Search Products</h2>
+           {% for i in object %}
+           <!-- Table to display search results for user -->
+                <table><tr>
+                    <td colspan="3"><img src="{{i.images.url}}"  style="width:20em;height:20em;"></td><br>
+                    <tr>
+                        <td><a href="/viewproducts?id={{i.id}} ">View</a> </td>
+                    </tr>
+
+            {% endfor %}
+        </center>
+         {% endblock %}
+</body>
+
+</html>
