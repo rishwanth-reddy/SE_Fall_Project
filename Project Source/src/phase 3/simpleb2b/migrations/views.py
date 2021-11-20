@@ -55,3 +55,40 @@ def viewproducts(request):
     id = request.session["id"]
     dict = uploadprodcutsmodel.objects.get(id=id)
     return render(request, 'user/viewproducts.html', {'dict': dict})
+def orderproduct(request):
+    if request.method == "POST":
+        forms = orderproductsform(request.POST)
+        if forms.is_valid():
+            forms.save()
+            messages.success(request, 'order successfully ')
+            return redirect('viewproducts.html')
+        else:
+            print('Invalid Form')
+            form = orderproductsform()
+    else:
+        id = request.GET.get('id')
+        price = request.GET.get('price')
+        productname = request.GET.get('productname')
+        name= request.session['loggeduser']
+       # print('Price = ',price,' Product Name ',productname)
+        data = {'productname':productname,'amount':price,'name':name}
+        form = orderproductsform(data)
+
+        #form = orderproductsmodel.objects.all()
+    return render(request,'user/orderproduct.html',{'form':form})
+
+def usersearch(request):
+        return render(request, 'user/usersearch.html')
+
+
+def usersearchresult(request):
+        productname = request.GET.get('productname')
+        print('product is', productname, ' and its type ', type(productname))
+        dict = {}
+        check = uploadprodcutsmodel.objects.filter(productname=productname)
+        print(check)
+        object = check.filter(productname=productname)
+        # dict=uploadprodcutsmodel.objects.all()
+
+        return render(request, 'user/usersearchresult.html',{"object":object} )
+
