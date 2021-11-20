@@ -129,3 +129,120 @@ CREATE TABLE `simpleb2b_sellerregistrationmodel` (
   `status` varchar(100) NOT NULL,
   PRIMARY KEY  (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
+
+/*Data for the table `simpleb2b_sellerregistrationmodel` */
+
+insert into `simpleb2b_sellerregistrationmodel` values 
+
+(1,'Meghana','Meghana','123','meghana@gmail.com','9676358258','24080545','activated'),
+
+(2,'teja','teja','123','tejudatapoint5@gmail.com','9876543212','31178235','activated'),
+
+(3,'chakri','chakri','123','chakri@gmail.com','9182737474','35155480','activated'),
+
+(4,'anu','anu','123','anu@gmail.com','9876543212','30947020','activated'),
+
+(5,'priya','priya','123','priya@gmail.com','8899456321','96485375','activated'),
+
+(6,'bhavya','bhavya','123','bhavya@gmail.com','8965412365','waiting','waiting'),
+
+(7,'kattamma','kattamma','kattamma','kattimitti@gmail.com','9875012568','38127879','activated'),
+
+(8,'shaan','shaan','shaan','shaan@aol.com','9849098490','56113293','activated'),
+
+(9,'amgoth','amgoth','amgoth','amgoth123@gmail.com','9849056852','56962028','activated');
+
+/*Table structure for table `simpleb2b_uploadprodcutsmodel` */
+
+DROP TABLE IF EXISTS `simpleb2b_uploadprodcutsmodel`;
+
+CREATE TABLE `simpleb2b_uploadprodcutsmodel` (
+  `id` int(100) NOT NULL auto_increment,
+  `ownername` varchar(100) default NULL,
+  `productname` varchar(100) default NULL,
+  `vendorname` varchar(100) default NULL,
+  `productversion` varchar(100) default NULL,
+  `color` varchar(100) default NULL,
+  `actionprice` varchar(100) default NULL,
+  `price` varchar(100) default NULL,
+  `features` varchar(100) default NULL,
+  `date` date default NULL,
+  `time` time default NULL,
+  `images` varchar(100) default NULL,
+  PRIMARY KEY  (`id`),
+  UNIQUE KEY `productname` (`productname`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=latin1;
+
+/*Data for the table `simpleb2b_uploadprodcutsmodel` */
+
+insert into `simpleb2b_uploadprodcutsmodel` values 
+
+(1,'meghana','blackcar','bmw','5','black','200000','220000','good','2019-08-22','02:14:00','car_a7OAUHt.jpg'),
+
+(2,'meghana','whitebike','sujiki','5','white','100000','120000','good','2019-08-23','02:20:00','bike.jpg'),
+
+(3,'teja','orangebike','ktm','7','orange','24000','240000','fuel saving','2019-08-23','02:29:00','images.jpg'),
+
+(4,'teja','bluecar','maruthi','8','blue','500000','540000','goodproduct','2019-08-24','03:06:00','car2.jpg'),
+
+(5,'chakri','orangecar','bmw','5','black','250000','300000','good','2019-08-25','04:49:00','car_fBEAz2f.jpg'),
+
+(6,'anu','bluebike','activa','5','blue','70000','60000','good','2019-08-26','12:13:00','images_s2nsqDL.jpg'),
+
+(7,'chakri','redcar','fusion','5','red','150000','200000','top speed','2019-08-26','12:56:10','download.jpg'),
+
+(8,'meghana','pinkscooty','activa','6G','pink','50000','60000','good product','2019-08-29','10:14:30','scooty.jpg'),
+
+(9,'teja','yellowscooty','activa','5G','white','70000','72000','good','2019-08-29','10:18:21','whitescooty.png'),
+
+(10,'chakri','blackscooty','activa','4G','yellow','70000','78000','highspeed','2019-08-29','10:21:50','yellowscooty.jpg'),
+
+(11,'Meghana','BWMcar','Meghana','120','Black','400000','5000000','abc','2019-09-05','14:55:00','images.jpg'),
+
+(12,'shaan','Xiaomy Note 7','Xiaomi','3','White','8500','9999','Smart Phone','2019-09-07','12:00:00','download.webp'),
+
+(13,'amgoth','Duke Bike','Duke','1','Orange','250000','285000','350cc','2019-09-16','05:58:00','images_10.jpg');
+
+/*Table structure for table `simpleb2b_userregistrationmodel` */
+
+DROP TABLE IF EXISTS `simpleb2b_userregistrationmodel`;
+
+CREATE TABLE `simpleb2b_userregistrationmodel` (
+  `id` int(100) NOT NULL auto_increment,
+  `name` varchar(100) default NULL,
+  `loginid` varchar(100) default NULL,
+  `password` varchar(100) default NULL,
+  `email` varchar(100) default NULL,
+  `contact` varchar(100) default NULL,
+  `authkey` varchar(100) default NULL,
+  `status` varchar(100) default NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+
+/*Data for the table `simpleb2b_userregistrationmodel` */
+
+insert into `simpleb2b_userregistrationmodel` values 
+
+(1,'jyo','jyo','123','jyo@gmail.com','9676358258','68467302','activated'),
+
+(2,'jaya','jaya','123','jaya@gmail.com','9887654343','18924208','activated'),
+
+(3,'sunny','sunny','123','sunny@gmail.com','8888998899','13926135','activated'),
+
+(4,'honey','honey','123','honey@gmail.com','8977123919','17889151','activated'),
+
+(5,'tony','tony','123','tony@gmail.com','8124398767','11746147','activated'),
+
+(6,'sony','sony','123','sony@gmail.com','9898989898','81900994','activated'),
+
+(7,'devika','devika','123','devika@gmail.com','9685741232','18748622','activated'),
+
+(8,'siri','siri','1234','siri@gmail.com','7766893242','65662400','activated'),
+
+(9,'ramya','ramya','1234','ramya@gmail.com','9812345678','27711118','activated'),
+
+(10,'supriya','supriya','1234','supriya@gmail.com','9922992299','46484786','activated'),
+
+(11,'alex','alex','alex','lx160cm@gmail.com','9849098490','59768275','activated'),
+
+(12,'kalpana','kalpana','kalpana','kalpana123@gmail.com','9844056563','12414754','activated');
